@@ -4,7 +4,11 @@
     <meta charset="UTF-8"> <!--permite definir el conjunot de caracteres simbolo etc-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>primera paginaa</title>
+<link rel="stylesheet" href="estilos/style.css">   
+ <link rel="icon" href="C:\Users\duban\Documents\programacion_2025_1\img\uncrop_hero_bdf08a8ca6.jpg">
+
     <img src="C:\Users\duban\Documents\programacion_2025_1\img\cd1dc1b99a08cab0c2f54547a0f0df95.jpg" alt="">
+
 </head>
 <body><!--es todo el contenido de las paginas webb-->
     <form action="https://www.google.com/search" method="get">
@@ -15,6 +19,9 @@
              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+<div class="prueba">
+    hola mundo
+</div>
 
 
     </form>
@@ -56,22 +63,58 @@
             <td>columna 1</td>
             <td>columna 2</td>
         </thead>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!---->
-</head>
-<body>
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q">
+            <button type="submit">Buscar</button>
+        </form>
+        <br>
+        <br>
+        <br>
     
-</body>
-</html>
-
-    </table>
-
-
+        <br>
+        <br>
+    <h1>Datos</h1>
+        <form action="#">
+            <label>Nombre: </label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre">
+    
+            <br>
+            <label>Apellido:</label>
+            <input type="text" name="apellido" value="Gomez"
+            disabled>
+            <div>
+                <label>e-mail</label>
+                <input type="email" name="correo" placeholder="example@com.co"
+                maxlength="20"
+                required> <!--REQUIRED_CAMPO OBLIGATORIO-->
+            </div>
+            <div>
+                <label>Edad</label>
+                <input type="number" name="edad" value="18" min="1" max="120">
+            </div>
+            <div>
+                <fieldset> <!--cajita-->
+                    <legend>datos de la u</legend>
+                    <label>Fecha de matricula</label>
+                    <input type="date" name="fechamatricula">
+                    <input type="datetime" name="fechamatricula">
+                    <input type="datetime-local" name="fechamatricula">
+                </fieldset>
+                <div>
+                    <label>Foto</label>
+                    <input type="file" name="Foto">
+                </div>
+                
+            </div>
+            <div>
+                <label>Color favorito</label>
+                <input type="color" name="ColorFav">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+            
+        </form>
 </body>
 </html>
