@@ -1,33 +1,38 @@
 <?php
-class persona{
+class persona
+{
     private $nombre;
     private $apellido;
     private $edad;
     private $pasatiempos;
 
-    function __construct($nombre,$apellido)
+    function __construct($nombre, $apellido)
     {
-        $this->nombre=$nombre;
-        $this->apellido=$apellido;
-        $this->edad= 18;
+        $this->nombre = $nombre;
+        $this->apellido = $apellido;
+        $this->edad = 18;
     }
 
 
-    function mayoredad(){
-        return $this->edad >=18 ? 'si' : 'No';
+    function mayoredad()
+    {
+        return $this->edad >= 18 ? 'si' : 'No';
     }
 
-    function setedad($val){
-        $this-> edad =$val;
+    function setedad($val)
+    {
+        $this->edad = $val;
     }
-    function getedad(){
+    function getedad()
+    {
         return $this->edad;
     }
 }
 
-$persona = new Persona("Pepe","ABC");
+$persona = new Persona("Pepe", "ABC");
 $persona->setedad(18);
 echo $persona->mayoredad();
+
 
 
 
